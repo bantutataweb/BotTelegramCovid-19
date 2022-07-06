@@ -1,6 +1,6 @@
 <?php 
 date_default_timezone_set('Asia/Jakarta');
-$token = "5450485449:AAF_3AuhRLUf3C8gbVqK1HR2KlwfTDJNAOE";
+$token = "your_token";
 $path = "https://api.telegram.org/bot".$token;
 $update = json_decode(file_get_contents("php://input"), TRUE);
 $chatID = $update["message"]["chat"]["id"];
